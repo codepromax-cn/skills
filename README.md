@@ -32,7 +32,8 @@ npx skills add codepromax-cn/skills --skill clean-code \
   --agent continue \
   --agent kilo \
   --agent trae \
-  --agent minimax-code
+  --agent minimax-code \
+  --agent kimi-code-cli
 ```
 
 Add `--global` to install the skill for your user account instead of the current project. Run `npx skills add codepromax-cn/skills --list` to see the catalog. The CLI's supported agent list and native paths can change; consult its documentation for current targets.
