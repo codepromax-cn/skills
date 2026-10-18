@@ -14,24 +14,77 @@ Use the [Skills CLI](https://github.com/vercel-labs/skills) to install skills di
 
 ### Quick Install by Agent
 
-Copy the one-line command for your specific coding agent:
+Choose your coding agent and copy its install command:
 
-| Agent | One-Line Install Command |
-| :--- | :--- |
-| **Claude Code** | `npx skills add codepromax-cn/skills --skill clean-code -a claude-code` |
-| **Cursor** | `npx skills add codepromax-cn/skills --skill clean-code -a cursor` |
-| **Kimi Code CLI** | `npx skills add codepromax-cn/skills --skill clean-code -a kimi-code-cli` |
-| **Trae** | `npx skills add codepromax-cn/skills --skill clean-code -a trae` |
-| **MiniMax Code** | `npx skills add codepromax-cn/skills --skill clean-code -a minimax-code` |
-| **GitHub Copilot** | `npx skills add codepromax-cn/skills --skill clean-code -a github-copilot` |
-| **Antigravity** | `npx skills add codepromax-cn/skills --skill clean-code -a antigravity` |
-| **Codex** | `npx skills add codepromax-cn/skills --skill clean-code -a codex` |
-| **Cline** | `npx skills add codepromax-cn/skills --skill clean-code -a cline` |
-| **OpenCode** | `npx skills add codepromax-cn/skills --skill clean-code -a opencode` |
-| **ZCode** | `npx skills add codepromax-cn/skills --skill clean-code -a zcode` |
-| **Continue** | `npx skills add codepromax-cn/skills --skill clean-code -a continue` |
-| **Kilo** | `npx skills add codepromax-cn/skills --skill clean-code -a kilo` |
-| **Pi** | `npx skills add codepromax-cn/skills --skill clean-code -a pi` |
+#### Claude Code
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a claude-code
+```
+
+#### Cursor
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a cursor
+```
+
+#### Kimi Code CLI
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a kimi-code-cli
+```
+
+#### Trae
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a trae
+```
+
+#### MiniMax Code
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a minimax-code
+```
+
+#### GitHub Copilot
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a github-copilot
+```
+
+#### Antigravity
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a antigravity
+```
+
+#### Codex
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a codex
+```
+
+#### Cline
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a cline
+```
+
+#### OpenCode
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a opencode
+```
+
+#### ZCode
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a zcode
+```
+
+#### Continue
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a continue
+```
+
+#### Kilo
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a kilo
+```
+
+#### Pi
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a pi
+```
 
 Add `--global` (or `-g`) to install user-wide instead of only for the current project.
 
