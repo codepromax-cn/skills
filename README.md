@@ -20,7 +20,35 @@ Run without flags to let the CLI auto-detect installed agents or prompt you inte
 npx skills add codepromax-cn/skills --skill clean-code
 ```
 
-Add `--global` (or `-g`) to install user-wide instead of only for the current project. To install for all detected agents at once, pass `-a '*'`.
+Add `--global` (or `-g`) to install user-wide instead of only for the current project.
+
+### Install for All / Multiple Agents
+
+Install to all supported agents in one command using the wildcard `-a '*'`:
+
+```sh
+npx skills add codepromax-cn/skills --skill clean-code -a '*'
+```
+
+Or specify all target agents explicitly:
+
+```sh
+npx skills add codepromax-cn/skills --skill clean-code \
+  --agent claude-code \
+  --agent codex \
+  --agent antigravity \
+  --agent opencode \
+  --agent zcode \
+  --agent pi \
+  --agent cursor \
+  --agent github-copilot \
+  --agent cline \
+  --agent continue \
+  --agent kilo \
+  --agent trae \
+  --agent minimax-code \
+  --agent kimi-code-cli
+```
 
 ### Quick Install by Agent
 
