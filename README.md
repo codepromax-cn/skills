@@ -6,7 +6,7 @@ A catalog of reusable, cross-agent skills. Each skill has one canonical `SKILL.m
 
 | Skill | What it does |
 | --- | --- |
-| [clean-code](skills/clean-code/SKILL.md) | Applies practical Clean Code guidance while writing, reviewing, and refactoring code. |
+| [clean-code](skills/clean-code/SKILL.md) | Applies Clean Code principles and Martin Fowler's refactoring patterns to write, review, and safely evolve code. |
 
 ## Install
 
