@@ -16,24 +16,28 @@ Use this skill by default for code writing and maintenance tasks. Apply Clean Co
 
 ## Writing and changing code
 
-- Choose names that reveal intent and match local conventions. For example, Python and Rust functions commonly use `snake_case`, while their types use `PascalCase`; Go uses mixed-case identifiers, with `PascalCase` for exported names. Follow the repository's formatter and existing style where it differs.
+- Choose names that reveal intent and match local conventions. For example, TypeScript and JavaScript commonly use `camelCase` with `PascalCase` for types; Python and Rust use `snake_case` with `PascalCase` for types; Go uses mixed-case identifiers, with `PascalCase` for exported names. Follow the repository's formatter and existing style where it differs.
 - Keep functions cohesive and at a consistent level of abstraction. Split a function when an extracted helper names a distinct idea, removes confusing nesting, or makes reuse clearer. Do not split code just to meet a line limit.
 - Keep parameters and configuration understandable. Group related values when that creates a useful domain concept; avoid wrappers that only move arguments around. Use separate functions or named options when a boolean flag obscures intent.
 - Make state changes and side effects visible. Prefer pure transformations when they simplify reasoning, while using mutation when it is the natural and clear choice for the language or task.
+- Manage resource lifecycles explicitly. Ensure files, connections, and background tasks are cleanly released using idiomatic patterns (such as context managers, `defer`, RAII, or explicit cancellation and timeouts).
 - Use guard clauses when they make the main path easier to follow. Avoid adding branches or helpers that make simple logic harder to read.
 - Keep comments that explain rationale, constraints, or non-obvious decisions. Remove comments that merely restate code, and remove stale comments only after checking that they are no longer useful.
 - Handle errors according to the language and surrounding API. Do not replace meaningful nullable or error states with empty defaults that change behavior.
 - Name values when doing so explains their meaning, avoids repetition, or centralizes configuration. Obvious local literals do not need constants solely to eliminate literals.
 - Reduce duplication when the repeated behavior is understood and a shared implementation makes future changes safer. Avoid premature generalization.
+- Cover non-trivial logic and edge cases with focused tests. Verify against existing test suites and never delete or weaken assertions merely to force tests to pass.
 
 ## Reviewing code
 
-- Report findings with file and line locations when available, prioritizing correctness and behavior risks before readability issues.
+- Report findings with file and line locations when available, prioritizing correctness, security, and behavior risks before readability issues.
+- Categorize findings by severity (e.g., Blocker/Bug, Warning/Risk, Suggestion/Nit) so the most impactful issues are addressed first.
 - Keep feedback specific and concise. Explain why a finding matters and suggest a focused fix.
 - A review request calls for findings; do not edit code unless the user also asks for a fix or refactor.
 
 ## Refactoring code
 
 - Preserve externally visible behavior and interfaces unless the user requests a change.
+- Verify refactored code against existing tests to ensure behavior has not regressed.
 - Focus on the requested code and its necessary dependencies. Avoid opportunistic rewrites.
 - Summarize the meaningful changes briefly. Do not give a Clean Code lecture unless asked.
