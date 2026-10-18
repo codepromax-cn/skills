@@ -1,4 +1,4 @@
-# CodeProMax Skills
+# CodeProMax Agent Skills
 
 A catalog of reusable, cross-agent skills. Each skill has one canonical `SKILL.md` and can be installed into the native skill directory for a supported coding agent.
 
