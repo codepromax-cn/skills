@@ -17,7 +17,7 @@
 | 技能名称 | 语言 | 功能说明 |
 | :--- | :---: | :--- |
 | [blackboard-to-printable](skills/blackboard-to-printable/SKILL.md) | 英文 | 将黑板与白板照片转化为清晰高对比度、黑字白底的打印版 PNG 与 A4 PDF，杜绝 OCR 乱码与文字走形。 |
-| [handwritten-worksheet-to-word](skills/handwritten-worksheet-to-word/SKILL.md) | 英文 | 将手写中文练习题照片还原为干净、可编辑、可打印的 Word 文档（.docx）。 |
+| [handwritten-worksheet-to-word](skills/handwritten-worksheet-to-word/SKILL.md) | 英文 | 将拍好的中文练习题照片（含红笔手写答案）还原为干净、可编辑、可打印的 Word (.docx) 文档。 |
 | [handwritten-worksheet-to-word-zh](skills/handwritten-worksheet-to-word-zh/SKILL.md) | 中文 | 将拍好的中文练习题照片（含红笔手写答案）还原为干净、可编辑、可打印的 Word (.docx) 文档。 |
 
 ## 安装指南 (Install)
