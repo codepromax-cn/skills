@@ -8,6 +8,8 @@ A catalog of reusable, cross-agent skills. Each skill has one canonical `SKILL.m
 | --- | --- |
 | [blackboard-to-printable](skills/blackboard-to-printable/SKILL.md) | Turns classroom blackboard and whiteboard photos into clean, black-on-white printable PNG and PDF files without OCR distortion. |
 | [clean-code](skills/clean-code/SKILL.md) | Applies Clean Code principles and Martin Fowler's refactoring patterns to write, review, and safely evolve code. |
+| [handwritten-worksheet-to-word](skills/handwritten-worksheet-to-word/SKILL.md) | Restores photos of handwritten Chinese practice worksheets into clean, printable, editable Word documents (.docx). |
+| [handwritten-worksheet-to-word-zh](skills/handwritten-worksheet-to-word-zh/SKILL.md) | 将拍好的中文练习题照片（含红笔手写）还原为干净、可编辑、可打印的 Word (.docx) 文档。 |
 
 ## Install
 
