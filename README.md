@@ -6,6 +6,7 @@ A catalog of reusable, cross-agent skills. Each skill has one canonical `SKILL.m
 
 | Skill | What it does |
 | --- | --- |
+| [blackboard-to-printable](skills/blackboard-to-printable/SKILL.md) | Turns classroom blackboard and whiteboard photos into clean, black-on-white printable PNG and PDF files without OCR distortion. |
 | [clean-code](skills/clean-code/SKILL.md) | Applies Clean Code principles and Martin Fowler's refactoring patterns to write, review, and safely evolve code. |
 
 ## Install
