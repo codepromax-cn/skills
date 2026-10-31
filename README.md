@@ -1,5 +1,7 @@
 # CodeProMax Agent Skills
 
+[English](README.md) | [简体中文](README_zh.md)
+
 A catalog of reusable, cross-agent skills. Each skill has one canonical `SKILL.md` and can be installed into the native skill directory for a supported coding agent.
 
 ## Skills
