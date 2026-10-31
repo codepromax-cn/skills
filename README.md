@@ -22,66 +22,59 @@ A catalog of reusable, cross-agent skills. Each skill has one canonical `SKILL.m
 
 Use the [Skills CLI](https://github.com/vercel-labs/skills) to install skills directly into your agent's configuration.
 
-### Quick Install by Agent
+> [!NOTE]
+> **Cross-Agent Compatibility**: Web registries like [skills.sh](https://skills.sh) default to showing `-a claude-code` in their copy snippet, but all skills in this repository are **agent-agnostic** and work across Claude Code, Cursor, Antigravity, GitHub Copilot, OpenAI Codex, and more.
 
-Copy the one-line command for your specific coding agent:
+### 1. Auto-Detect (Recommended)
 
-| Agent | One-Line Install Command |
-| :--- | :--- |
-| **Claude Code** | `npx skills add codepromax-cn/skills --skill clean-code -a claude-code` |
-| **Cursor** | `npx skills add codepromax-cn/skills --skill clean-code -a cursor` |
-| **Kimi Code CLI** | `npx skills add codepromax-cn/skills --skill clean-code -a kimi-code-cli` |
-| **Trae** | `npx skills add codepromax-cn/skills --skill clean-code -a trae` |
-| **MiniMax Code** | `npx skills add codepromax-cn/skills --skill clean-code -a minimax-code` |
-| **GitHub Copilot** | `npx skills add codepromax-cn/skills --skill clean-code -a github-copilot` |
-| **Antigravity** | `npx skills add codepromax-cn/skills --skill clean-code -a antigravity` |
-| **Codex** | `npx skills add codepromax-cn/skills --skill clean-code -a codex` |
-| **Cline** | `npx skills add codepromax-cn/skills --skill clean-code -a cline` |
-| **OpenCode** | `npx skills add codepromax-cn/skills --skill clean-code -a opencode` |
-| **ZCode** | `npx skills add codepromax-cn/skills --skill clean-code -a zcode` |
-| **Continue** | `npx skills add codepromax-cn/skills --skill clean-code -a continue` |
-| **Kilo** | `npx skills add codepromax-cn/skills --skill clean-code -a kilo` |
-| **Pi** | `npx skills add codepromax-cn/skills --skill clean-code -a pi` |
+Run without the `-a` flag to let the CLI automatically detect your installed agent(s):
+
+```sh
+# Install a specific skill (e.g., blackboard-to-printable)
+npx skills add codepromax-cn/skills --skill blackboard-to-printable
+
+# Or install interactively (lists all skills and prompts for selection)
+npx skills add codepromax-cn/skills
+```
 
 Add `--global` (or `-g`) to install user-wide instead of only for the current project.
 
-### Interactive (Auto-Detect)
+### 2. Install for All Agents / All Skills
 
-Run without flags to let the CLI auto-detect installed agents or prompt you interactively:
-
-```sh
-npx skills add codepromax-cn/skills --skill clean-code
-```
-
-### Install for All / Multiple Agents
-
-Install to all supported agents in one command using the wildcard `-a '*'`:
+Install a skill to all supported agents at once using `-a '*'`:
 
 ```sh
-npx skills add codepromax-cn/skills --skill clean-code -a '*'
+npx skills add codepromax-cn/skills --skill blackboard-to-printable -a '*'
 ```
 
-Or specify all target agents explicitly:
+Or install all skills to all detected agents:
 
 ```sh
-npx skills add codepromax-cn/skills --skill clean-code \
-  --agent claude-code \
-  --agent codex \
-  --agent antigravity \
-  --agent opencode \
-  --agent zcode \
-  --agent pi \
-  --agent cursor \
-  --agent github-copilot \
-  --agent cline \
-  --agent continue \
-  --agent kilo \
-  --agent trae \
-  --agent minimax-code \
-  --agent kimi-code-cli
+npx skills add codepromax-cn/skills --all
 ```
 
-Run `npx skills add codepromax-cn/skills --list` to see the catalog. The CLI's supported agent list and native paths can change; consult its documentation for current targets.
+### 3. Quick Install by Agent
+
+Specify your target agent with `-a <agent>`. Replace `<skill-name>` with any skill from the catalog (e.g. `clean-code`, `blackboard-to-printable`, `handwritten-worksheet-to-word`, `handwritten-worksheet-to-word-zh`):
+
+| Agent | One-Line Install Command |
+| :--- | :--- |
+| **Claude Code** | `npx skills add codepromax-cn/skills --skill <skill-name> -a claude-code` |
+| **Cursor** | `npx skills add codepromax-cn/skills --skill <skill-name> -a cursor` |
+| **Antigravity** | `npx skills add codepromax-cn/skills --skill <skill-name> -a antigravity` |
+| **GitHub Copilot** | `npx skills add codepromax-cn/skills --skill <skill-name> -a github-copilot` |
+| **Codex** | `npx skills add codepromax-cn/skills --skill <skill-name> -a codex` |
+| **Kimi Code CLI** | `npx skills add codepromax-cn/skills --skill <skill-name> -a kimi-code-cli` |
+| **Trae** | `npx skills add codepromax-cn/skills --skill <skill-name> -a trae` |
+| **MiniMax Code** | `npx skills add codepromax-cn/skills --skill <skill-name> -a minimax-code` |
+| **Cline** | `npx skills add codepromax-cn/skills --skill <skill-name> -a cline` |
+| **OpenCode** | `npx skills add codepromax-cn/skills --skill <skill-name> -a opencode` |
+| **ZCode** | `npx skills add codepromax-cn/skills --skill <skill-name> -a zcode` |
+| **Continue** | `npx skills add codepromax-cn/skills --skill <skill-name> -a continue` |
+| **Kilo** | `npx skills add codepromax-cn/skills --skill <skill-name> -a kilo` |
+| **Pi** | `npx skills add codepromax-cn/skills --skill <skill-name> -a pi` |
+
+Run `npx skills add codepromax-cn/skills --list` to view all available skills in the repository.
 
 ## Compatibility
 
