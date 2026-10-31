@@ -2,6 +2,14 @@
 name: blackboard-to-printable
 description: "Turn classroom blackboard, greenboard, or whiteboard photos into clean, black-on-white printable PNG and A4 PDF files. Preserves original handwriting, diagrams, and layout without OCR errors or hallucinations. Applies Gaussian flat-field illumination correction, adaptive Otsu thresholding, speckle noise reduction, and projection-based deskew."
 license: MIT
+category: document-processing
+tags:
+  - blackboard
+  - whiteboard
+  - printable
+  - pdf
+  - image-processing
+language: en
 ---
 
 # Blackboard to Printable

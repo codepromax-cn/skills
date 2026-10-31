@@ -2,6 +2,14 @@
 name: handwritten-worksheet-to-word
 description: "Turn photos of Chinese practice worksheets (typically filled in with red handwriting) into clean, editable, printable Word (.docx) documents. Strips red handwritten answers, restores blank brackets/underlines, aligns multi-column exercises with borderless tables, and preserves question order without OCR hallucination."
 license: MIT
+category: document-processing
+tags:
+  - worksheet
+  - handwriting-removal
+  - word
+  - docx
+  - education
+language: en
 ---
 
 # Handwritten Worksheet to Word

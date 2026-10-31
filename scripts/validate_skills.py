@@ -70,6 +70,15 @@ def validate_skill(skill_dir: Path, root_license: bytes) -> list[str]:
     if license_id != "MIT":
         errors.append(f"{skill_file.relative_to(ROOT)}: frontmatter license must be MIT")
 
+    category = metadata.get("category")
+    if category is not None and (not isinstance(category, str) or not category.strip()):
+        errors.append(f"{skill_file.relative_to(ROOT)}: category must be a non-empty string when provided")
+
+    tags = metadata.get("tags")
+    if tags is not None:
+        if not isinstance(tags, list) or not all(isinstance(t, str) and t.strip() for t in tags):
+            errors.append(f"{skill_file.relative_to(ROOT)}: tags must be a list of non-empty strings when provided")
+
     return errors
 
 

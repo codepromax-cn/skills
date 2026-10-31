@@ -2,6 +2,14 @@
 name: handwritten-worksheet-to-word-zh
 description: "将拍好的中文练习题照片（通常已用红笔手写填写答案）还原为干净、可编辑、可打印的 Word (.docx) 文档。准确去除红色手写答案并规范留空（括号、方框、书写线），保持原题字词顺序、版面与无边框表格排版，不产生 OCR 乱码或幻觉。"
 license: MIT
+category: document-processing
+tags:
+  - 练习题
+  - 去手写
+  - word
+  - docx
+  - 试卷还原
+language: zh-CN
 ---
 
 # 手写练习题去手写转 Word 通用技能

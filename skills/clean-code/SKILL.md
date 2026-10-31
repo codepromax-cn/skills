@@ -2,6 +2,12 @@
 name: clean-code
 description: "Use when writing code, implementing features, reviewing code, refactoring, or improving readability and maintainability. Apply practical Clean Code principles and Martin Fowler's refactoring techniques to write, review, and safely evolve code."
 license: MIT
+category: engineering
+tags:
+  - clean-code
+  - refactoring
+  - code-review
+  - best-practices
 ---
 
 # Clean Code
