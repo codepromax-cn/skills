@@ -1,6 +1,8 @@
 # 手写练习题去手写转 Word 智能体技能
 
-> 语言版本：[English (英文版)](../handwritten-worksheet-to-word/README.md) | **简体中文**
+[English](README_en.md) | [简体中文](README.md)
+
+> 对应英文指令技能包：[handwritten-worksheet-to-word](../handwritten-worksheet-to-word/README.md)
 
 将拍好的中文练习题照片（通常已用红笔手写填写答案）还原为干净、可编辑、可打印的 Word (`.docx`) 文档。
 

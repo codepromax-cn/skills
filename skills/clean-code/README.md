@@ -1,5 +1,7 @@
 # Clean Code & Refactoring
 
+[English](README.md) | [简体中文](README_zh.md)
+
 A portable AI agent skill that applies Clean Code engineering principles and Martin Fowler's refactoring patterns to guide code writing, pull request reviews, and systematic refactoring.
 
 ## Install

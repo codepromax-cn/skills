@@ -1,6 +1,8 @@
 # Handwritten Worksheet to Word
 
-> Language versions: **English** | [简体中文 (Chinese)](../handwritten-worksheet-to-word-zh/README.md)
+[English](README.md) | [简体中文](README_zh.md)
+
+> Sibling Chinese package: [handwritten-worksheet-to-word-zh](../handwritten-worksheet-to-word-zh/README.md)
 
 An agent skill that turns photos of Chinese practice worksheets (typically completed with red handwriting) into clean, editable, printable Word (`.docx`) documents.
 

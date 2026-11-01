@@ -1,5 +1,7 @@
 # Blackboard to Printable
 
+[English](README.md) | [简体中文](README_zh.md)
+
 Convert classroom blackboard, greenboard, or whiteboard photos into clean, black-on-white printable PNG and 300 DPI A4 PDF files. Preserves original handwriting, mathematical formulas, and sketches without OCR hallucinations or distorted layouts.
 
 ## Install
