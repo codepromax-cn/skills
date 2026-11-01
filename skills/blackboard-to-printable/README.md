@@ -4,6 +4,12 @@
 
 Convert classroom blackboard, greenboard, or whiteboard photos into clean, black-on-white printable PNG and 300 DPI A4 PDF files. Preserves original handwriting, mathematical formulas, and sketches without OCR hallucinations or distorted layouts.
 
+## Example
+
+| Original Photo (Before) | Printable Output (After) |
+| :---: | :---: |
+| ![Original Blackboard Photo](assets/example-input.jpg) | ![Clean Printable Output](assets/example-output.jpg) |
+
 ## Install
 
 Install this skill into your AI coding assistant:
